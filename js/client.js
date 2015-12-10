@@ -125,4 +125,11 @@ $(document).ready(function(){
         $(this).siblings('img').clone().appendTo('.zoom-wrp').addClass('zoomed');
     });
 
+
+    // menu
+
+    $('.menu').on('click', function(){
+        $('.header').toggleClass('active');
+    });
+
 });

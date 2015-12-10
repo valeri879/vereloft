@@ -12,7 +12,7 @@ body, html{
 
 .header{
 	position: fixed;
-    z-index: 4;
+    z-index: 9999;
     box-sizing: border-box;
     padding: 6px 0;
     text-align: center;
@@ -97,16 +97,21 @@ body, html{
 }
 
 .section{
+    position: relative;
     width: 100%;
-    min-height: 920px;
-    height: 100%;
+    min-height: 100%;
     clear: both;
+}
+
+.section::after{
+    content: '';
+    clear:both;
 }
 
 .slider{
     position: relative;
-    width: 890px;
-   	top: 0;
+    width: 60%;
+   	margin-left: 5%;
     height: 580px;
 }
 
@@ -165,12 +170,12 @@ body, html{
     top: 0;
     right: 0;
     height: 580px;
-    width: 460px;
+    width: 30%;
+    margin: 0 0 0 5%;
 }
 
 .cont-wrp{
 	position: relative;
-    width: 1540px;
     margin: 300px auto 0;
 }
 
@@ -267,13 +272,18 @@ body, html{
 }
 
 .bg-gr{
-	text-align: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.background{
+    width: 100%;
+    height: 100%;
 	background: rgba(54, 54, 55, 0.7);
-	width: 100%;
-	height: 100%;
-	position: absolute;
-	top: 0;
-	left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 #map .bg-gr{
@@ -289,7 +299,7 @@ body, html{
     display: inline-block;
     width: 70%;
     border: 1px solid #cecece;
-    margin: 180px;
+    margin: 100px auto;
     padding: 40px;
     box-sizing: border-box;
 }
@@ -403,36 +413,36 @@ body, html{
 	float: left;
 	width: 50%;
 	height: 100%;
-	background-color: rgba(54, 54, 55, 0.7);
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	background-size: cover;
 }
 
 .price-col{
-	background-color: rgba(54, 54, 55, 0.7);
 }
 
 .prc-det{
 	overflow: hidden;
-	background-color: rgba(54, 54, 55, 0.7);
+    min-height: 840px;
 }
 
 .prc-wrp{
-	position: relative;
-	width: 650px;
-	background: #494949;
-    height: 180px;
+    position: relative;
+    width: 70%;
+    height: 170px;
+    background: #494949;
     color: #D4D7DD;
     float: right;
     margin: 100px 0 0 0px;
 }
 
 .prc-ic{
-	float: left;
-	width: 70px;
-	height: 100%;
-	background: #363637;
+    float: left;
+    position: absolute;
+    width: 70px;
+    text-align: center;
+    height: 100%;
+    background: #363637;
 }
 
 .prc-ic i{
@@ -453,7 +463,7 @@ body, html{
     white-space: nowrap;
     text-overflow: ellipsis;
     padding: 25px 30px 15px 30px;
-    margin: 0;
+    margin: 0 0 0 60px;
 }
 
 .prc-wrp h4::after{
@@ -469,7 +479,7 @@ body, html{
 .prc-wrp p{
 	text-align: left;
     font-family: 'Open Sans', sans-serif;
-    margin: 0;
+    margin: 0 0 0 60px;
     padding: 0 30px 30px 30px;
     float: left;
     width: 510px;
@@ -729,7 +739,8 @@ footer{
     background: #494949;
     font-size: 18px;
     padding: 10px 45px;
-    margin: 20px 265px;
+    margin: 40px auto;
+    display: table;
 }
 
 .lbl{
@@ -995,6 +1006,15 @@ footer{
     z-index: 22;
 }
 
+.price-col{
+    position: relative;
+    z-index: 11;
+}
+
+.menu{
+    display: none;
+}
+
 .zoomed{
     top: 50px;
     z-index: 999;
@@ -1003,20 +1023,172 @@ footer{
 }
 
 
+
+
 @media screen and (max-width: 1330px){
     .price-section .col-2{
         display: block;
         float: inherit;
+        padding: 100px 0 0 0;
         width: 100%;
     }
 
     .prc-wrp{
-        margin: 60px auto;
+        margin: 0 auto 40px;
         float: inherit;
+        height: 200px;
+        width: 90%;
     }
 
     .prc1, .prc2, .prc3{
         left: -100%;
     }
 
+    .sr-ul, .sr-ul-2{
+        width: 60%;
+    }
+
+    .sr-ul-2{
+        height: inherit;
+    }
+
+    .sr-li-2{
+        display: block;
+        width: 100%;
+        height: inherit;
+        float: inherit;
+    }
+
+    .sr-li-2 img{
+        height: inherit;
+    }
+
+    .fixed{
+        height: inherit;
+    }
+
+    .price-section .prc-det{
+        display: none;
+    }
+
+    .prc-wrp h4{
+        margin: 0 0 0 60px;
+        width: 60%;
+    }
+
+    .prc-wrp p{
+        width: 75%;
+        margin: 21px 0 0 60px;
+    }
+
+    .img-3, .img-2{
+        width: 100%;
+    }
+
+    .img-info{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 960px){
+    .mn-ul{
+        padding: 0;
+    }
+    .mn-li {
+        display: block;
+        margin: 10px 20px;
+    }
+
+    .header{
+        background: #363637;
+        height: 54px;
+        overflow: hidden;        
+    }
+
+    .menu{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: 20px;
+        top: 11px;
+        color: #D4D7DD;
+        font-size: 32px;
+    }
+
+    .header.active{
+        overflow: inherit;
+        height: inherit;
+    }
+
+    .sr-ul{
+        display: block;
+        margin: auto;
+    }
+
+    .sr-li{
+        display: block;
+        padding: 10px 40px;
+    }
+
+    .inp-wrp{
+        width: 90%;
+    }
+
+    .ab-wrp{
+        text-align: center;
+    }
+
+    .ab-wrp h1{
+        left: inherit;
+    }
+
+    .serv .sr-ul{
+        width: 90%;
+    }
+
+    footer{
+        padding: 0 0 100px 0;
+    }
+
+    .c-li{
+        padding: 20px 30px;
+        display: block;
+        float: inherit;
+        border-bottom: 1px solid #D4D7DD;
+    }
+
+    .mn-inf-wrp{
+        position: relative;
+        margin: 60px 0 0 5%;
+        display: block;
+        width: 90%;
+        height: 250px;
+        overflow: hidden;
+    }
+
+    .slider{
+        width: 80%;
+        margin-left: 10%;
+        height: 260px;
+        display: block;
+    }
+
+    .sl-ttl{
+        top: -95px;
+    }
+
+    .mn-inf-wrp .sl-ttl{
+        top: 0;
+        position: inherit;
+    }
+    .serv .sl-ttl-4{
+        top: 0;
+        margin: 80px 0 0 0;
+    }
+
+    .serv .off-ttl{
+        margin: 0 0 90px 0;
+    }
 }
