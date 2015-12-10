@@ -15,6 +15,7 @@
 	<!-- google fonts -->
 
 	<!-- scripts -->
+	<script rel="javascript" src="https://maps.googleapis.com/maps/api/js"></script>
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/swiper.js"></script>
 	<script type="text/javascript" src="js/parallax.min.js"></script>
@@ -35,18 +36,17 @@
 				<li class="mn-li" id="main"><span>main</span></li>
 				<li class="mn-li" id="service"><span>service</span></li>
 				<li class="mn-li" id="price"><span>price</span></li>
+				<li class="mn-li" id="office"><span>office</span></li>
 				<li class="mn-li" id="projects"><span>projects</span></li>
 				<li class="mn-li" id="about"><span>about</span></li>
 				<li class="mn-li" id="contact"><span>contact</span></li>
-				<li class="mn-li"><span>en</span></li>
+				<li class="mn-li languages"><span>en</span><span>ge</span><span>ru</span></li>
 			</ul>
 		</nav>
 	</header>
 	<div class="clear"></div>
 	<div class="video">
-		<video  controls loop autoplay>
-			<source src="video/video.mp4" type="video/mp4">
-		</video>
+		<!-- <iframe id="ytplayer" width="100%" height="100%" src="https://www.youtube.com/embed/fsD1zoI7NYo?autoplay=1&volume=0&controls=0&showinfo=0&loop=1&iv_load_policy=3&enablejsapi=1" frameborder="0" allowfullscreen></iframe> -->
 	</div>
 	<div class="bg">
 		<div class="cont-wrp">
@@ -89,12 +89,11 @@
 					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 				</p>
-				<a href="#" class="btn">read more</a>
+				<a href="#" class="btn more">read more</a>
 			</div>
 		</div>
 	</div>
 </div>
-
 <div class="section sc-wrp parallax-window" data-parallax="scroll" data-image-src="img/img/3.jpg">
 	<div class="bg-gr">
 			<div class="ab-wrp">
@@ -137,7 +136,6 @@
 			</div>
 	</div>
 </div>
-
 <div class="serv service-wrp">
 	<h1 class="sl-ttl sl-ttl-2">service</h1>
 	<div class="clear"></div>
@@ -185,8 +183,7 @@
 	</ul>
 	<div class="line"></div>
 </div>
-
-<div class="section">
+<div class="section parallax-window price-section" data-parallax="scroll" data-image-src="img/img/4.jpg">
 	<div class="col-2 price-col">
 		<div class="bg-gr">
 			<div class="prc-wrp prc-sel-1">
@@ -262,7 +259,6 @@
 		</div>
 	</div>
 </div>
-
 <div class="serv">
 	<h1 class="sl-ttl sl-ttl-4">new projects</h1>
 
@@ -302,6 +298,9 @@
 	</ul>
 	<h1 class="sl-ttl sl-ttl-4">our office</h1>
 </div>
+
+<div class="zoom-wrp"></div>
+
 <div class="section">
 	<div class="im-cont">
 		<div class="img-3">
@@ -409,7 +408,7 @@
 <div class="serv">
 	<h1 class="sl-ttl sl-ttl-2">contact</h1>
 </div>
-<div class="map">
+<div id="map" class="map">
 	<div class="bg-gr">
 		<div class="map-loc-wrp">
 			<h4 class="map-h4">click to see map</h4>
@@ -433,7 +432,7 @@
 	</div>
 
 	<div class="ft-line">
-		<div class="sc-top"></div>
+		<div class="sc-top"><i class="ic ic-arrow"></i></div>
 	</div>
 
 	<ul class="c-ul">
@@ -446,7 +445,7 @@
 		</li>
 		<li class="c-li">
 			<h3>let's socialize</h3>
-			<div class="c-det"> 
+			<div class="c-det soc-c"> 
 				<i class="ic ic-fb"></i> 
 				<i class="ic ic-tw"></i> 
 				<i class="ic ic-sk"></i> 

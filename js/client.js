@@ -14,21 +14,20 @@ $(document).ready(function(){
     var price = ($(window).height()) * 2 + ($('.service-wrp').height());
     var projects = ($(window).height()) * 3 + ($('.service-wrp').height() - 60);
     var contact = ($(window).height()) * 5 + ($('.service-wrp').height() - 120);
+    var office = ($(window).height()) * 4 + ($('.service-wrp').height() - 120);
+    
     //main
     $('#main').on('click', function(){
     	$('html, body').animate({scrollTop: 0},1000);
     });
-
     //about
-    $('#about').on('click', function(){
+    $('#about, .more').on('click', function(){
     	$('html, body').animate({scrollTop: about},1000);
     });
-
     //service
     $('#service').on('click', function(){
     	$('html, body').animate({scrollTop: service},1000);
     });
-
     //price
     $('#price').on('click', function(){
     	$('html, body').animate({scrollTop: price},1000);
@@ -37,10 +36,25 @@ $(document).ready(function(){
     $('#projects').on('click', function(){
     	$('html, body').animate({scrollTop: projects},1000);
     });
+    //office
+    $('#office').on('click', function(){
+    	$('html, body').animate({scrollTop: office},1000);
+    });
     //contact
     $('#contact').on('click', function(){
-    	$('html, body').animate({scrollTop: contact},1000);
+        $('html, body').animate({scrollTop: contact},1000);
     });
+    // scroll top 
+    $('.sc-top').on('click', function(){
+        $('html, body').animate({scrollTop: 0},1000);4
+    });
+    // active menu
+    $('.mn-li span').on('click', function(){
+        $('.mn-li span').removeClass('active');
+        $(this).addClass('active');
+    });
+
+
 
     // fixed
     $(window).scroll(function(){
@@ -84,6 +98,31 @@ $(document).ready(function(){
     });
     $('.img-3, .img-2').mouseleave('click', function(){
     	$(this).children('.img-info').removeClass('active');
+    });
+
+    // map
+
+    function initialize() {
+        var myLatlng = new google.maps.LatLng(41.7730341,44.7846196);
+        var mapOptions = {
+            zoom: 10,
+            center: myLatlng
+    }
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+
+    var marker = new google.maps.Marker({
+        position: myLatlng,
+        map: map,
+        title: 'Hello World!'
+    });
+    }       
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+    // office image zoom
+
+    $('.resize').on('click', function(){
+        $('.zoom-wrp').show();
+        $(this).siblings('img').clone().appendTo('.zoom-wrp').addClass('zoomed');
     });
 
 });

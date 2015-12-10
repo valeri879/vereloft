@@ -37,20 +37,27 @@ body, html{
 
 .mn-li{
 	display: inline-block;
+    margin: 0 20px;
+}
+
+.mn-li span.active{
+  border-bottom: 2px solid #cfcfcf;  
 }
 
 .mn-li span{
     color: #cfcfcf;
     text-transform: uppercase;
     text-decoration: none;
-    padding: 5px 30px;
+    padding: 5px 0;
     font-size: 16px;
     font-weight: normal;
+    cursor: pointer;
     transition: all 0.3s;
+    border-bottom: 2px solid rgba(207, 207, 207, 0);
 }
 
-.mn-li a:hover{
-	color: #fff;
+.mn-li span:hover{
+	border-bottom: 2px solid #cfcfcf;
 }
 
 .video{
@@ -269,6 +276,10 @@ body, html{
 	left: 0;
 }
 
+#map .bg-gr{
+    z-index: 11;
+}
+
 .sc-wrp{
 	position: relative;
 }
@@ -277,7 +288,6 @@ body, html{
     position: relative;
     display: inline-block;
     width: 70%;
-    height: 550px;
     border: 1px solid #cecece;
     margin: 180px;
     padding: 40px;
@@ -400,13 +410,11 @@ body, html{
 }
 
 .price-col{
-	background-image: url('../img/img/1.jpg');
 	background-color: rgba(54, 54, 55, 0.7);
 }
 
 .prc-det{
 	overflow: hidden;
-	background-image: url('../img/img/2.jpg');
 	background-color: rgba(54, 54, 55, 0.7);
 }
 
@@ -590,8 +598,6 @@ body, html{
 	position: relative;
 	width: 100%;
 	height: 400px;
-	background: url('../img/img/map.png') no-repeat 50% 50%;
-	background-size: cover;
 }
 
 .map-loc-wrp{
@@ -745,6 +751,7 @@ footer{
 
 .sc-top{
     width: 50px;
+    cursor: pointer;
     height: 50px;
     background: #363637;
     border: 1px solid #D4D7DD;
@@ -756,12 +763,13 @@ footer{
 	display: inline-block;
 	margin: 0;
 	padding: 0;
+    list-style: none;
 }
 
 .c-li{
 	padding: 0 30px;
 	text-align: left;
-	display: inline-block;
+	float: left;
 }
 
 .c-li h3{
@@ -775,7 +783,7 @@ footer{
 .c-det{
 	font-family: "Open Sans", sans-serif;
 	color: #D4D7DD;
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .c-det i{
@@ -954,4 +962,61 @@ footer{
 .img-2 .img-info{
     left: 230px;
     top: 170px;
+}
+
+.languages span{
+    margin: 0 3px;
+}
+
+.soc-c{
+    font-size: 30px;
+}
+
+.soc-c i{
+    padding: 0 5px 0 0;
+}
+
+.ic-arrow{
+    transform: rotate(-135deg);
+    position: absolute;
+    color: #D4D7DD;
+    left: 19px;
+    top: 14px;
+}
+
+.zoom-wrp{
+    display: none;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(54, 54, 55, 0.88);
+    z-index: 22;
+}
+
+.zoomed{
+    top: 50px;
+    z-index: 999;
+    width: 80%;
+    height: auto;
+}
+
+
+@media screen and (max-width: 1330px){
+    .price-section .col-2{
+        display: block;
+        float: inherit;
+        width: 100%;
+    }
+
+    .prc-wrp{
+        margin: 60px auto;
+        float: inherit;
+    }
+
+    .prc1, .prc2, .prc3{
+        left: -100%;
+    }
+
 }
