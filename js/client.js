@@ -10,11 +10,11 @@ $(document).ready(function() {
 
     var main = 0;
     var about = $(window).height();
-    var service = ($(window).height()) * 2 - 60;
-    var price = ($(window).height()) * 2 + ($('.service-wrp').height());
-    var projects = ($(window).height()) * 3 + ($('.service-wrp').height() - 60);
-    var contact = ($(window).height()) * 5 + ($('.service-wrp').height() - 120);
-    var office = ($(window).height()) * 4 + ($('.service-wrp').height() - 120);
+    var service = ($('.ab-sec').height() + $('.mn-sec').height());
+    var price = ($('.ab-sec').height() + $('.mn-sec').height() + $('.service-wrp').height());
+    var projects = ($('.ab-sec').height() + $('.mn-sec').height() + $('.service-wrp').height() + $('.price-section').height());
+    var contact = ($('.of-sec').height() + $('.ab-sec').height() + $('.mn-sec').height() + $('.service-wrp').height() + $('.price-section').height() + $('.serv').height());
+    var office = ($('.ab-sec').height() + $('.mn-sec').height() + $('.service-wrp').height() + $('.price-section').height() + $('.serv').height() - 150);
 
     //main
     $('#main').on('click', function() {
@@ -116,6 +116,12 @@ $(document).ready(function() {
     });
 
     // map
+
+    // show map
+    $('.map-wrp .bg-gr').on('click', function(){
+        $(this).hide();
+    });
+
     // When the window has finished loading create our google map below
     google.maps.event.addDomListener(window, 'load', init);
 
@@ -163,7 +169,12 @@ $(document).ready(function() {
 
     $('.resize').on('click', function() {
         $('.zoom-wrp').show();
-        $(this).siblings('img').clone().appendTo('.zoom-wrp').addClass('zoomed');
+        $(this).siblings('img').clone().appendTo('.im-wrp').addClass('zoomed');
+    });
+
+    $('.close').on('click', function() {
+        $('.zoom-wrp').hide();
+        $(this).siblings('img').remove();
     });
 
 
