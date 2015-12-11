@@ -26,6 +26,10 @@ body, html{
     transition: all 0.4s ease-in-out;
 }
 
+.languages a{
+    text-decoration: none;
+}
+
 .hd-menu{
     margin: auto;
     display: inline-block;
