@@ -26,6 +26,11 @@ body, html{
     transition: all 0.4s ease-in-out;
 }
 
+.c-det a{
+    color: #d4d7dd;
+    text-decoration: none;
+}
+
 .languages a{
     text-decoration: none;
 }
