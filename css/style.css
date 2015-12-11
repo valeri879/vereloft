@@ -491,7 +491,7 @@ body, html{
     margin: 0 0 0 60px;
     padding: 0 30px 30px 30px;
     float: left;
-    width: 510px;
+    width: 70%;
     height: 58px;
     overflow: hidden;
     font-size: 16px;
@@ -1094,6 +1094,24 @@ footer{
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
    color:    #D4D7DD;
+}
+
+@media screen and (max-width: 1440px){
+    .cont-wrp{
+        margin: 250px auto 0;
+    }
+
+    .slider{
+        height: 480px;
+    }
+
+    .mn-inf-wrp p, .sl-p{
+        font-size: 14px;
+    }
+
+    ..prc-wrp{
+        margin: 90px 0 0 0px;   
+    }
 }
 
 
