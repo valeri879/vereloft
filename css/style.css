@@ -467,7 +467,7 @@ body, html{
     text-align: left;
     text-transform: uppercase;
     font-weight: normal;
-    width: 400px;
+    width: 60%;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
