@@ -53,7 +53,7 @@ $(document).ready(function() {
         }, 1000);
     });
     //contact
-    $('#contact').on('click', function() {
+    $('#contact, .ic-message').on('click', function() {
         $('html, body').animate({
             scrollTop: contact
         }, 1000);

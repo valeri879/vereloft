@@ -492,9 +492,10 @@ body, html{
     padding: 0 30px 30px 30px;
     float: left;
     width: 70%;
-    height: 58px;
+    height: 92px;
     overflow: hidden;
     font-size: 16px;
+    box-sizing: border-box;
 }
 
 .prc{
@@ -1028,7 +1029,7 @@ footer{
     z-index: 11;
 }
 
-.menu{
+.menu, .message{
     display: none;
 }
 
@@ -1200,7 +1201,8 @@ footer{
         overflow: hidden;        
     }
 
-    .menu{
+    .menu, 
+    .message{
         display: inline-block;
         width: 10px;
         height: 10px;
@@ -1209,6 +1211,11 @@ footer{
         top: 11px;
         color: #D4D7DD;
         font-size: 32px;
+    }
+
+    .message{
+        left: inherit;
+        right: 40px;
     }
 
     .header.active{
@@ -1232,6 +1239,12 @@ footer{
 
     .ab-wrp{
         text-align: center;
+        width: 95%;
+        padding: 15px;
+    }
+
+    .mn-inf-wrp p, .sl-p{
+        font-size: 12px;
     }
 
     .ab-wrp h1{
@@ -1285,5 +1298,27 @@ footer{
 
     .serv .off-ttl{
         margin: 0 0 90px 0;
+    }
+
+    .im-cont{
+        height: auto;
+    }
+
+    .im-wrp{
+        width: 95%;
+    }
+
+    .img-3, .img-2{
+        height: auto;
+        margin: -4px 0 0 0;
+    }
+
+    .img-gal{
+        position: relative;
+        width: 100%;
+    }
+
+    .cn-sec{
+        margin: -4px 0 0 0;
     }
 }
