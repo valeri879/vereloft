@@ -56,7 +56,8 @@ body, html {
   border-bottom: 2px solid rgba(207, 207, 207, 0); }
 
 .mn-li span:hover {
-  border-bottom: 2px solid #cfcfcf; }
+  border-bottom: 2px solid #be6c3b;
+  color: #be6c3b; }
 
 .video {
   position: absolute;
