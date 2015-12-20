@@ -101,52 +101,9 @@ body, html {
   width: 70px;
   top: -90px;
   z-index: 3;
-  -webkit-animation: mymove 3s infinite; /* Chrome, Safari, Opera */
-  animation: mymove 3s infinite;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes mymove {
-  20% {
-    top: -20px;
-  }
-  50% {
-    top: -10px;
-  }
-  70% {
-    top: 0px;
-  }
-  20% {
-    top: -20px;
-  }
-}
 
-@keyframes mymove {
-  20% {
-    top: -80px;
-  }
-  50% {
-    top: -70px;
-  }
-  70% {
-    top: -60px;
-  }
-  75% {
-    top: -50px;
-  }
-  80% {
-    top: -60px;
-  }
-  85% {
-    top: -70px;
-  }
-  90% {
-    top: -80px;
-  }
-  100% {
-    top: -90px;
-  }
-}
 
 .clear {
   clear: both;
