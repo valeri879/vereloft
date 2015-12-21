@@ -188,6 +188,10 @@ $(document).ready(function () {
     });
 
 
+    // parallax.js
+    jQuery( '.parallax-layer' ).parallax( options );
+
+
 });
 
 
