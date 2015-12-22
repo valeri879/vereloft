@@ -189,7 +189,10 @@ $(document).ready(function () {
 
 
     // parallax.js
-    jQuery( '.parallax-layer' ).parallax( options );
+    $('body').parallaxify({
+        verticalParallax: false,
+        mouseMotionType: 'natural'
+    });
 
 
 });

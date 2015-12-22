@@ -20,15 +20,15 @@
     <script rel="javascript" src="https://maps.googleapis.com/maps/api/js"></script>
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/swiper.js"></script>
-    <script type="text/javascript" src="js/parallax.min.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/parallax.min.js"></script>
     <script type="text/javascript" src="js/client.js"></script>
     <!-- scripts -->
 
 </head>
 <body>
 
-<div class="section mn-sec">
+<div id="#paralax-port" class="section mn-sec">
     <a href="#">
         <img class="logo" src="img/ic/vereloft.svg">
     </a>
@@ -52,11 +52,8 @@
     </header>
     <div class="clear"></div>
 
-    <ul>
-        <li class="parallax-layer" data-depth="0.00"><img src="img/img/brandbook.jpg"></li>
-        <li class="parallax-layer" data-depth="0.10"><img src="img/img/desk.png"></li>
-        <li class="parallax-layer" data-depth="0.40"><img src="img/img/blurred-layer.png"></li>
-    </ul>
+    <div class="foreground" data-parallaxify-range-x="0" data-parallaxify-range-y="0"></div>
+    <div class="background" data-parallaxify-background-range="50"></div>
 
     <div class="bg">
         <div class="cont-wrp">
@@ -313,7 +310,6 @@
     </ul>
     <h1 class="sl-ttl sl-ttl-4 off-ttl">our office</h1>
 </div>
-
 <div class="zoom-wrp">
     <div class="im-wrp">
         <div class="left"></div>
@@ -321,7 +317,6 @@
         <div class="close">CLOSE<i class="ic ic-close"></i></div>
     </div>
 </div>
-
 <div class="section of-sec">
     <div class="im-cont">
         <div class="img-3">
@@ -427,7 +422,6 @@
 <div class="serv cn-sec">
     <h1 class="sl-ttl sl-ttl-2">contact</h1>
 </div>
-
 <div class="map-wrp">
     <div id="map" class="map"></div>
     <div class="bg-gr">
@@ -442,7 +436,6 @@
         </div>
     </div>
 </div>
-
 <footer class="section">
     <div class="inp-wrp">
         <label class="lbl">Message sent</label>
