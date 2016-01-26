@@ -259,6 +259,16 @@ body, html {
   position: relative;
   z-index: 1; }
 
+.icon-wrapper {
+  float: left;
+  width: 33.33%; }
+  .icon-wrapper i {
+    font-size: 45px; }
+  .icon-wrapper p {
+    text-transform: uppercase;
+    font-family: 12px;
+    font-weight: bold; }
+
 .ab-sec .background {
   width: 100%;
   height: 100%;
@@ -983,7 +993,7 @@ footer {
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: 99;
+  z-index: 0;
   background: rgba(54, 54, 55, 0.82); }
 
 .cn-sec .sl-ttl-2 {
@@ -1006,6 +1016,9 @@ footer {
 :-ms-input-placeholder {
   /* Internet Explorer 10-11 */
   color: #D4D7DD; }
+
+.price-section {
+  background: rgba(54, 54, 55, 0.76); }
 
 /*.left {
   position: absolute;
@@ -1091,6 +1104,9 @@ footer {
 
   .price-section .prc-det {
     display: none; }
+
+  .price-section {
+    background: rgba(73, 73, 73, 0.63); }
 
   .prc-wrp h4 {
     margin: 0 0 0 60px;
@@ -1220,5 +1236,3 @@ footer {
 
   .cn-sec {
     margin: -4px 0 0 0; } }
-
-/*# sourceMappingURL=style.css.map */

@@ -15,7 +15,7 @@ body, html {
   overflow: hidden;
   height: 100%;
 }
- 
+
 .header {
   position: fixed;
   z-index: 9999;
@@ -303,6 +303,23 @@ body, html {
   text-align: center;
   position: relative;
   z-index: 1;
+}
+
+.icon-wrapper {
+
+  float: left;
+  width: 33.33%;
+
+  i {
+    font-size: 45px;
+  }
+
+  p {
+    text-transform: uppercase;
+    font-family: 12px;
+    font-weight: bold;
+  }
+
 }
 
 .ab-sec .background {
@@ -1139,7 +1156,7 @@ footer {
   height: 100%;
   position: absolute;
   top: 0;
-  z-index: 99;
+  z-index: 0;
   background: rgba(54, 54, 55, 0.82);
 }
 
@@ -1165,6 +1182,10 @@ footer {
   color: #D4D7DD;
 }
 
+.price-section {
+  background: rgba(54, 54, 55, 0.76);
+}
+
 /*.left {
   position: absolute;
   width: 100px;
@@ -1185,7 +1206,7 @@ footer {
   z-index: 1;
 }*/
 
-.foreground{
+.foreground {
   position: relative;
   width: 120%;
   background: url('../img/img/brandbook.jpg') repeat center;
@@ -1193,7 +1214,7 @@ footer {
   background-size: 120%;
 }
 
-.background{
+.background {
   position: absolute;
   width: 100%;
   background: url("../img/img/desk.png") no-repeat center bottom;
@@ -1266,6 +1287,10 @@ footer {
 
   .price-section .prc-det {
     display: none;
+  }
+
+  .price-section {
+    background: rgba(73, 73, 73, 0.63);
   }
 
   .prc-wrp h4 {
