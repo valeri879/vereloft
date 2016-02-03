@@ -194,6 +194,13 @@ $(document).ready(function () {
         mouseMotionType: 'natural'
     });
 
+    $('.terms').on('click', function () {
+        $('.terms-conditions').toggleClass('active');
+    });
+
+    $('.terms-conditions .fa-times').on('click', function () {
+        $('.terms-conditions').removeClass('active');
+    });
 
 });
 
