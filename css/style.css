@@ -348,8 +348,7 @@ body, html {
   padding: inherit;
   width: 25%;
   height: 100%;
-  float: left;
-  background: #F00; }
+  float: left; }
 
 .sr-li-2 img {
   height: 265px;
@@ -925,7 +924,8 @@ footer {
   margin: 0 3px; }
 
 .soc-c {
-  font-size: 30px; }
+  font-size: 30px;
+  text-align: center; }
 
 .soc-c i {
   padding: 0 5px 0 0; }
