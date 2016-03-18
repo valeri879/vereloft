@@ -199,6 +199,8 @@ body, html {
   right: 0;
   height: 580px;
   width: 30%;
+  padding: 0 50px 0 0;
+  box-sizing: border-box;
   margin: 0 0 0 5%;
 }
 
@@ -225,10 +227,14 @@ body, html {
   left: 0;
 }
 
-.mn-inf-wrp p, .sl-p, .text-container p{
+.mn-inf-wrp p, .sl-p, .text-container p {
   font-family: 'Open Sans', sans-serif;
   color: #cecece;
   font-size: 16px;
+}
+
+.mn-inf-wrp p {
+  text-align: justify;
 }
 
 .btn {
@@ -429,7 +435,7 @@ body, html {
   height: 300px;
 }
 
-.sr-li .ic {
+.sr-li .ic, .sr-li .fa {
   font-size: 35px;
   border: 1px solid #363637;
   display: inline-block;
@@ -1184,6 +1190,7 @@ footer {
 
 .price-section {
   background: rgba(54, 54, 55, 0.76);
+  min-height: 870px;
 }
 
 /*.left {
