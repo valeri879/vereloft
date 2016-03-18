@@ -24,39 +24,29 @@ $(document).ready(function () {
     });
     //about
     $('#about, .more').on('click', function () {
-        $('html, body').animate({
-            scrollTop: about
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#about-section').offset().top -60 }, 1000);
     });
     //service
     $('#service').on('click', function () {
-        $('html, body').animate({
-            scrollTop: service
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#service-section').offset().top -60 }, 1000);
     });
     //price
     $('#price').on('click', function () {
-        $('html, body').animate({
-            scrollTop: price
-        }, 1000);
+
+        $("html, body").animate({ scrollTop: $('#price-section').offset().top -60 }, 1000);
+
     });
     //projects
     $('#projects').on('click', function () {
-        $('html, body').animate({
-            scrollTop: projects
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#projects-section').offset().top -60 }, 1000);
     });
     //office
     $('#office, .cl-off').on('click', function () {
-        $('html, body').animate({
-            scrollTop: office
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#office-section').offset().top -60 }, 1000);
     });
     //contact
     $('#contact, .ic-message').on('click', function () {
-        $('html, body').animate({
-            scrollTop: contact
-        }, 1000);
+        $("html, body").animate({ scrollTop: $('#contact-section').offset().top -60 }, 1000);
     });
     // scroll top 
     $('.sc-top').on('click', function () {
