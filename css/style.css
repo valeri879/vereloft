@@ -167,6 +167,8 @@ body, html {
   right: 0;
   height: 580px;
   width: 30%;
+  padding: 0 50px 0 0;
+  box-sizing: border-box;
   margin: 0 0 0 5%; }
 
 .cont-wrp {
@@ -192,6 +194,9 @@ body, html {
   font-family: 'Open Sans', sans-serif;
   color: #cecece;
   font-size: 16px; }
+
+.mn-inf-wrp p {
+  text-align: justify; }
 
 .btn {
   color: #cecece;
@@ -361,7 +366,7 @@ body, html {
   margin: 80px auto;
   height: 300px; }
 
-.sr-li .ic {
+.sr-li .ic, .sr-li .fa {
   font-size: 35px;
   border: 1px solid #363637;
   display: inline-block;
@@ -1018,7 +1023,8 @@ footer {
   color: #D4D7DD; }
 
 .price-section {
-  background: rgba(54, 54, 55, 0.76); }
+  background: rgba(54, 54, 55, 0.76);
+  min-height: 870px; }
 
 /*.left {
   position: absolute;
